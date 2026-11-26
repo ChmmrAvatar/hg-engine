@@ -926,7 +926,7 @@ BOOL LONG_CALL CalcAccuracy(void *bw, struct BattleStruct *sp, int attacker, int
         // Compound Eyes - 5325/4096
 
         if ((attacker == sp->rawSpeedNonRNGClientOrder[i])
-            && (atk_ability == ABILITY_COMPOUND_EYES)) {
+            && (atk_ability == ABILITY_COMPOUND_EYES || atk_ability == ABILITY_ILLUMINATE)) {
             accuracyModifier = QMul_RoundUp(accuracyModifier, UQ412__1_3);
         }
 
